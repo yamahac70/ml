@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pacifico&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Kaushan Script", cursive;
+  /*   font-family: "Pacifico", cursive; */
+}
+body {
+  color: #fff;
+  background-color: #f2f2f2;
+}
+.mili {
+  position: relative;
+  background-color: #ff7cee;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.texto {
+  z-index: 2;
+  width: 100%;
+  color: #ff7cee;
+  text-shadow: 5px 5px 5px black;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10rem;
+  font-weight: bold;
+
+  /* background-clip: text; */
+}
+#detras {
+  z-index: 0;
+  position: absolute;
+
+  background-image: url("./img/2.jpg");
+  animation: fondo infinite 10s alternate-reverse;
+  width: 65%;
+  height: 90%;
+  background-position: center;
+  background-size: cover;
+}
+#corazon {
+  z-index: 1;
+  position: absolute;
+  width: 65%;
+}
+@keyframes fondo {
+  0% {
+    background-image: url("./img/2.jpg");
+  }
+  20% {
+    background-image: url("./img/3.jpg");
+  }
+  40% {
+    background-image: url("./img/4.jpg");
+  }
+  60% {
+    background-image: url("./img/5.jpg");
+  }
+  80% {
+    background-position: bottom;
+    background-image: url("./img/6.jpg");
+  }
+  90% {
+    background-image: url("./img/7.jpg");
+  }
+}
